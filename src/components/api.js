@@ -8,9 +8,9 @@ class Api extends React.Component {
 			"https://tripadvisor1.p.rapidapi.com/locations/search?query=auckland",
 			{
 				headers: {
-					"x-rapidapi-host": "tripadvisor1.p.rapidapi.com",
+					"x-rapidapi-host": "some host",
 					"x-rapidapi-key":
-						"1675195e27msh90ac8fbce74dfa8p19c5f6jsnba2c0d50c801",
+						"some key",
 					useQueryString: true,
 				},
 			}
