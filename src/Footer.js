@@ -11,7 +11,7 @@ class Footer extends React.Component {
 								<div class='footer-text'>
 									<p>
 										{" "}
-										Developed by -<bold> Aastha Goyal </bold>
+										Developed by -<b> Aastha Goyal </b>
 									</p>
 									<p>
 										Copyright &copy;

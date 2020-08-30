@@ -1,5 +1,6 @@
 import React from "react";
 import backgroundImage from "./img/bg-img/hero-1.jpg";
+import picksImage from "./img/bg-img/hero-2.jpg";
 
 /* global google */
 
@@ -11,7 +12,6 @@ class App extends React.Component {
 
 		this.state = { place: "", duration: 0 };
 		this.onSearch = this.onSearch.bind(this);
-		
 	}
 
 	onSearch = (e) => {
@@ -115,7 +115,7 @@ class App extends React.Component {
 												<input id='autocomplete' placeholder='Destination' />
 
 												<input
-													type='number'
+													type='number'	
 													class='form-control'
 													id='duration'
 													placeholder='Duration(Days)'
@@ -158,7 +158,7 @@ class App extends React.Component {
 												class='single-catagory-area wow fadeInUpBig'
 												data-wow-delay='0.2s'>
 												<div class='catagory-content'>
-													<img src='img/core-img/icon-1.png' alt='' />
+													<img src={"./img/core-img/icon-1.png"} alt='' />
 													<a href='#'>
 														<h6>Hotels</h6>
 													</a>
@@ -241,6 +241,76 @@ class App extends React.Component {
 										also marks off the places that you have already visited off
 										your bucketlist so you can keep track of your dreams.
 									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section
+					class='dorne-editors-pick-area bg-img bg-overlay-9 section-padding-100'
+					style={{backgroundImage: 'url('+picksImage+')'}}>
+					<div class='container'>
+						<div class='row'>
+							<div class='col-12'>
+								<div class='section-heading text-center'>
+									<span></span>
+									<h4>Cities you must see</h4>
+									<p>Editor’s pick</p>
+								</div>
+							</div>
+						</div>
+
+						<div class='row'>
+							<div class='col-12 col-lg-6'>
+								<div
+									class='single-editors-pick-area wow fadeInUp'
+									data-wow-delay='0.2s'>
+									<img src='img/bg-img/editor-1.jpg' alt='' />
+									<div class='editors-pick-info'>
+										<div class='places-total-destinations d-flex'>
+											<a href='#'>South Island, New Zealand</a>
+											<a href='#'>#1 In World </a>
+										</div>
+										<div class='add-more'>
+											<a href="#"> +</a>
+											
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class='col-12 col-lg-6'>
+								<div
+									class='single-editors-pick-area wow fadeInUp'
+									data-wow-delay='0.4s'>
+									<img src={'./img/bg-img/editor-2.jpg'} alt='' />
+									<div class='editors-pick-info'>
+										<div class='places-total-destinations d-flex'>
+											<a href='#'>Paris, New York</a>
+											<a href='#'>#2 In World</a>
+										</div>
+										<div class='add-more'>
+											<a href='#'>
+												+
+											</a>
+										</div>
+									</div>
+								</div>
+								<div
+									class='single-editors-pick-area wow fadeInUp'
+									data-wow-delay='0.6s'>
+									<img src='img/bg-img/editor-3.jpg' alt='' />
+									<div class='editors-pick-info'>
+										<div class='places-total-destinations d-flex'>
+											<a href='#'>London</a>
+											<a href='#'>#5 In World</a>
+										</div>
+										<div class='add-more'>
+											<a href='#'>
+												+
+											</a>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>

@@ -6,7 +6,7 @@ class Destination extends React.Component {
 		return (
 			
 			<div>
-			Api
+			<Api/>
 			</div>
 		);
 	}

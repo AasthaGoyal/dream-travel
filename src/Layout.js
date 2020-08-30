@@ -5,7 +5,7 @@ import App from "./App";
 import React from "react";
 import Destination from "./Destination";
 import Trip from "./Trip";
-import Bucketlist from "./Bucketlist";
+// import Main from "./Main";
 import Map from "./Map";
 import Login from "./Login";
 import Profile from './Profile';
@@ -20,10 +20,10 @@ class Layout extends React.Component {
 					<Switch>
 						<Route exact={true} path='/App' component={App} />
 						<Route exact path='/Destination' component={Destination} />
-						{/* <Route exact path='/Trip' component={Trip} /> */}
+						<Route exact path='/Trip' component={Trip} />
 						<Route exact path='/Login' component={Login} />
 						<Route exact path='/Map' component={Map} />
-						{/* <Route exact path='/Bucketlist' component={Bucketlist} /> */}
+						{/* <Route exact path='/Main' component={Main} /> */}
 						<Route exact path='/Profile' component={Profile} />
 					</Switch>
 					<Footer />
