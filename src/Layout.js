@@ -1,14 +1,13 @@
-import Header from "./Header";
-import Footer from "./Footer";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
-import App from "./App";
+import App from "./pages/App";
 import React from "react";
-import Destination from "./Destination";
-import Trip from "./Trip";
-// import Main from "./Main";
-import Map from "./Map";
-import Login from "./Login";
-import Profile from './Profile';
+import Destination from "./pages/Destination";
+import Trip from "./pages/Trip";
+import Map from "./pages/Map";
+import Login from "./pages/Login";
+import Profile from './pages/Profile';
 
 class Layout extends React.Component {
 	render() {

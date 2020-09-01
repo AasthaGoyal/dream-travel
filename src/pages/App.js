@@ -1,6 +1,6 @@
 import React from "react";
-import backgroundImage from "./img/bg-img/hero-1.jpg";
-import picksImage from "./img/bg-img/hero-2.jpg";
+import backgroundImage from "../img/bg-img/hero-1.jpg";
+import picksImage from "../img/bg-img/hero-2.jpg";
 
 /* global google */
 

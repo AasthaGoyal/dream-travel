@@ -41,9 +41,9 @@ class Api extends React.Component {
 			"https://tripadvisor1.p.rapidapi.com/attractions/list?location_id=1811027&lang=en_US&currency=NZD&sort=recommended&lunit=km",
 			{
 				headers: {
-					"x-rapidapi-host": "some host",
+					"x-rapidapi-host": "tripadvisor1.p.rapidapi.com",
 					"x-rapidapi-key":
-						"some key",
+						"bf6713d895msh41a31b38ecf3297p183731jsnc6bbf8821cd8",
 					useQueryString: true,
 				},
 			}
