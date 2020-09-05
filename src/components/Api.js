@@ -42,8 +42,7 @@ class Api extends React.Component {
 			{
 				headers: {
 					"x-rapidapi-host": "tripadvisor1.p.rapidapi.com",
-					"x-rapidapi-key":
-						"bf6713d895msh41a31b38ecf3297p183731jsnc6bbf8821cd8",
+					"x-rapidapi-key":"bf6713d895msh41a31b38ecf3297p183731jsnc6bbf8821cd8",
 					useQueryString: true,
 				},
 			}
