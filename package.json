@@ -21,10 +21,19 @@
     "react-scripts": "^3.4.3",
     "redux": "^4.0.5"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://git.heroku.com/dream-travel.git"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
   "scripts": {
-    "start": "react-scripts start",
+    "start": "node index.js",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "node test.js",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
