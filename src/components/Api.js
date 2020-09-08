@@ -1,5 +1,5 @@
 import React from "react";
-import Attractions from "./Attractions";
+import Filters from "./Filters";
 
 class Api extends React.Component {
 	constructor(props) {
@@ -42,13 +42,15 @@ class Api extends React.Component {
 			{
 				headers: {
 					"x-rapidapi-host": "tripadvisor1.p.rapidapi.com",
-					"x-rapidapi-key":"bf6713d895msh41a31b38ecf3297p183731jsnc6bbf8821cd8",
+					"x-rapidapi-key":
+						"bf6713d895msh41a31b38ecf3297p183731jsnc6bbf8821cd8",
 					useQueryString: true,
 				},
 			}
 		)
 			.then((res) => res.json())
 			.then((data) => {
+				console.log(data);
 				this.setState({
 					dataLists: data.data.map((item) => ({
 						name: item.name,
@@ -58,9 +60,11 @@ class Api extends React.Component {
 						longitude: item.longiude,
 						description: item.description,
 						photo: item.photo,
-						subtypes: item.subtypes,
+						subtype: item.subtype,
 						rating: item.rating,
-						wesbite: item.website,
+						website: item.website,
+						tags:item.tags,
+
 					})),
 					filters: {
 						distance: data.filters.distance,
@@ -75,10 +79,10 @@ class Api extends React.Component {
 	}
 
 	render() {
+		
 		return (
 			<div>
-				{/* <ListAttractions dataLists={this.state.dataLists}/> */}
-				<Attractions data={this.state.dataLists} filters={this.state.filters} />
+				<Filters filter_data={this.state.filters} data={this.state.dataLists} />
 			</div>
 		);
 	}
